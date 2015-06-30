@@ -1,0 +1,11 @@
+{
+	"languages": {
+		"EN_US": "Английский",
+		"DE_DE": "Немецкий",
+		"RU_RU": "Русский"
+	},
+	"main": {
+		"CHOSE_LANGUAGE": "Chose Language",
+		"MAIN_TEXT": "Эта страница великолепна!"
+	}
+}

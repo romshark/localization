@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="localization">
+<head>
+	<title>Localization</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="libs/angular.js"></script>
+	<script type="text/javascript" src="libs/angular-translate.js"></script>
+	<script type="text/javascript" src="libs/angular-translate-static.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="MainController">
+	<div class="container">
+		<span id="main-text" translate="main.MAIN_TEXT"></span>
+		<select id="lang" ng-change="switchLanguage()" ng-init="$root.currentLanguage = 'ru_RU'" ng-model="$root.language.current" ng-options="language.locale as language.key | translate for language in $root.language.supported">
+		</select>
+	</div>
+</body>
+</html>
